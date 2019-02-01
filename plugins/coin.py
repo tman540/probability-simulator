@@ -1,7 +1,7 @@
 # Imports
 from random import randint
+from progress.bar import ShadyBar as Bar
 from prettytable import PrettyTable
-from progress.bar import Bar
 import graphics.bar as graphics
 
 
@@ -25,8 +25,10 @@ class Plugin:
                 if times <= 0:
                     raise ZeroDivisionError
                 # Create progress bar for counting flips
-                bar = Bar('Flipping {} coin(s)...'.format(times), max=times, suffix='%(index)d/%(max)d - %(percent).1f%% - %(eta)ds')
+                bar = Bar('Flipping {} coin(s)...'.format(times), max=times,
+                          suffix='%(index)d/%(max)d - %(percent).1f%% - %(eta)ds')
                 # Define vars for possible options
+
                 heads, tails = 0, 0
                 # Loop for the amount of times
                 for x in range(times):
@@ -34,9 +36,9 @@ class Plugin:
                     flip = randint(0, 1)
                     # Check results
                     if flip == 0:
-                        heads +=1
+                        heads += 1
                     else:
-                        tails +=1
+                        tails += 1
                     # Progress bar next
                     bar.next()
                 # Finish the progress bar
@@ -44,12 +46,11 @@ class Plugin:
                 # Output results
                 table = PrettyTable(["Side", "Amount", "Percent"])
                 # Define the rows
-                rows = [["Heads", heads, f"%{round((heads/times*100), 4)}"], ["Tails", tails, f"%{round((tails/times*100), 4)}"]]
+                rows = [["Heads", heads, f"%{round((heads / times * 100), 4)}"],
+                        ["Tails", tails, f"%{round((tails / times * 100), 4)}"]]
                 # Loop over the rows instead of calling `add_row()` multiple times
                 # Allows for easy expandability
                 for row in rows:
-
-
                     table.add_row(row)
                 # Output the Table
                 print(table)

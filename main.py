@@ -26,9 +26,9 @@ def run_plugin(plugin_name):
 
 
 # Define shell class
+# noinspection PyMethodMayBeStatic
 class Shell(Cmd):
     # Add run command to shell
-    # noinspection PyMethodMayBeStatic
     def do_run(self, plugin):
         """
         Launch a plugin
@@ -38,7 +38,6 @@ class Shell(Cmd):
         """
         run_plugin(plugin)
 
-    # noinspection PyMethodMayBeStatic
     def do_clear(self, arg):
         """
         Clears the console screen
@@ -46,7 +45,6 @@ class Shell(Cmd):
         clear()
 
     # Add exit command to shell
-    # noinspection PyMethodMayBeStatic
     def do_exit(self, arg):
         """
         Exit the program
