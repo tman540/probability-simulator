@@ -3,7 +3,7 @@ import importlib
 from cmd import Cmd
 from termutils import clear
 
-version = "1.0"
+version = "1.4"
 
 
 def run_plugin(plugin_name):

@@ -1,0 +1,5 @@
+numpy==1.16.1
+matplotlib==3.0.2
+progress==1.4
+prettytable==0.7.2
+termutils==2.0
