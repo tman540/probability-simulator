@@ -4,7 +4,7 @@ from progress.bar import ShadyBar as Bar
 
 class Plugin:
     def main(self):
-        cards = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace", "Joker"]
+        cards = ["Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace", "Joker"]
         suits = ["Hearts", "Diamonds", "Spades", "Clubs"]
         while True:
             # Catch exception if user enters letters or nothing
