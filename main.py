@@ -2,8 +2,9 @@
 import importlib
 from cmd import Cmd
 from termutils import clear
+import os
 
-version = "1.0"
+version = "1.4"
 
 
 def run_plugin(plugin_name):
@@ -25,6 +26,16 @@ def run_plugin(plugin_name):
         print("Please enter a plugin name")
 
 
+def list_plugins():
+    plugins = []
+    plugins_folder = os.listdir("./plugins")
+    for file in plugins_folder:
+        if file == "__pycache__":
+            pass
+        else:
+            plugins.append(file)
+    return plugins
+
 # Define shell class
 # noinspection PyMethodMayBeStatic
 class Shell(Cmd):
@@ -43,6 +54,15 @@ class Shell(Cmd):
         Clears the console screen
         """
         clear()
+
+    def do_list(self, args):
+        """
+        Prints a list of all the available plugins.
+        """
+        plugins = list_plugins()
+        print("Available plugins:")
+        for plugin in plugins:
+            print(plugin.replace(".py", ""))
 
     # Add exit command to shell
     def do_exit(self, arg):
