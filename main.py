@@ -4,7 +4,7 @@ from cmd import Cmd
 from termutils import clear
 import os
 
-version = "1.4"
+version = "1.7"
 
 
 def run_plugin(plugin_name):
@@ -26,15 +26,25 @@ def run_plugin(plugin_name):
         print("Please enter a plugin name")
 
 
+# List all of the plugins in the "plugins" folder
 def list_plugins():
+    # Create an empty list
     plugins = []
+    # Save the `plugins` folder to the "plugins_folder" var
     plugins_folder = os.listdir("./plugins")
+    # Iterate over all files in the plugins folder
     for file in plugins_folder:
+        # If the file is the __pycache__ directory
         if file == "__pycache__":
+            # Ignore it
             pass
+        # Otherwise
         else:
+            # Add it to the list of available plugins.
             plugins.append(file)
+    # Return the list of plugins
     return plugins
+
 
 # Define shell class
 # noinspection PyMethodMayBeStatic

@@ -57,11 +57,11 @@ class Plugin:
                 # Set the config vars for the table
                 graphics.data = [heads, tails]
                 graphics.labels = ["Heads", "Tails"]
-                graphics.title = "Result of {} flipped coins".format(times)
+                graphics.title = "Result of {} flipped coin(s)".format(times)
                 # Display a vertical bar graph
                 print("Generating graph...")
-                graphics.plox_x()
+                graphics.plot_x()
             except ValueError:
-                print("Please only enter number")
+                print("Please only enter numbers")
             except ZeroDivisionError:
                 print("You must flip at least 1 coin")
