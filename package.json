@@ -1,0 +1,42 @@
+{
+  "name": "Probability Simulator",
+  "description": "A simulator containing different probability simulators",
+  "version": "1.7",
+  "keywords": [
+    "probability",
+    "simulator",
+    "random",
+    "school-project"
+  ],
+  "contributors": [
+    {
+      "name": "Joe Moniz",
+      "email": "",
+      "web": ""
+    },
+    {
+      "name": "Steve Tautonico",
+      "email": "stautonico@gmail.com",
+      "web": "tautonico.tech"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Steve Tautonico",
+      "email": "stautonico@gmail.com",
+      "web": "tautonico.tech"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:tman540/probability-simulator.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/tman540/probability-simulator/blob/master/LICENSE"
+    }
+  ]
+}
