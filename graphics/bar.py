@@ -1,6 +1,12 @@
 # Imports
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.style as style
+
+# Set theme of graph
+# style.use('seaborn-poster')
+style.use('ggplot')
+
 
 # Initials vars
 title = ""
@@ -11,7 +17,7 @@ y_label = ""
 
 
 # Function for vertical bar graphs
-def plox_x():
+def plot_x():
     # Create an array from length of labels
     index = np.arange(len(labels))
     # Define the bar
@@ -20,7 +26,7 @@ def plox_x():
     plt.xlabel(x_label, fontsize=5)
     plt.ylabel(y_label, fontsize=5)
     # Define the intervals for the graph
-    plt.xticks(index, labels, fontsize=5, rotation=30)
+    plt.xticks(index, labels, fontsize=10, rotation=30)
     # Set the title and window title for the graph
     plt.title(title)
     plt.gcf().canvas.set_window_title(title)
@@ -30,7 +36,7 @@ def plox_x():
 
 
 # Function for horizontal bar graphs
-def plox_y():
+def plot_y():
     # Create an array from length of labels
     index = np.arange(len(labels))
     # Define the bar
@@ -39,7 +45,7 @@ def plox_y():
     plt.xlabel(x_label, fontsize=5)
     plt.ylabel(y_label, fontsize=5)
     # Define the intervals for the graph
-    plt.xticks(index, labels, fontsize=5, rotation=30)
+    plt.xticks(index, labels, fontsize=10, rotation=30)
     # Set the title and window title for the graph
     plt.title(title)
     plt.gcf().canvas.set_window_title(title)

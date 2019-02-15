@@ -1,4 +1,8 @@
 import matplotlib.pyplot as plt
+import matplotlib.style as style
+
+# Set theme of graph
+style.use('ggplot')
 
 
 def heatmap(data):
