@@ -104,14 +104,14 @@ class Plugin:
                 # Define the labels for the axes
                 graphics.labels = ["Bullseye", "Outer Ring"]
                 # Define the title for the graph
-                graphics.title = "Result of {} thrown darts".format(times)
+                graphics.title = "Result of {} thrown dart(s)".format(times)
                 # Display a vertical bar graph
                 print("Generating graph...")
-                graphics.plox_x()
+                graphics.plot_x()
                 # Generate a heatmap with the list of coords as an argument
                 heatmap(coords)
 
             except ValueError:
-                print("Please only enter number")
+                print("Please only enter numbers")
             except ZeroDivisionError:
                 print("You must throw at least 1 dart")
