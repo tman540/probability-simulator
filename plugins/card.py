@@ -33,8 +33,6 @@ class Plugin:
                     # Check if the card is a joker (this is because the joker doesn't have a suit, so one doesn't
                     # need to be chosen for it
                     if card_choice == "Joker":
-                        with open("cards.txt", "a+") as f:
-                            f.write(card_choice + "\n")
                         # Just add the `Joker` to the list of chosen cards
                         chosen_card_dict[card_choice] += 1
                     # If it's not a joker
