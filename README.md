@@ -22,7 +22,13 @@
 When the dartboard simulation is run, if there are sufficient values, the pattern should be shaped like a square dartboard, red by the bullseye, green around it, and blue near the outside.
 
 #### Marbles:
-When a bar graph is generated for the marble simulator, all of the bars 
-are the same color. The location of the bars/colors are also different
-every run (this is because of the randomization). Make sure to read the
-labels to ensure that you are analyzing the data properly.
+When a bar graph is generated for the marble simulator, all of the bars are the same color. The location of the bars/colors are also different every run (this is because of the randomization). Make sure to read the labels to ensure that you are analyzing the data properly.
+
+#### Round Dartboard:
+
+The round image displayed in the round dartboard module isn’t accurate. The model looks more like this:
+
+<img src="./img/pixil-frame-0.png" width="200"/>
+
+
+
