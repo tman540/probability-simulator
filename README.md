@@ -1,6 +1,6 @@
 # Probability Simulator
 
-![](https://img.shields.io/github/package-json/v/tman540/probability-simulator/master.svg?style=flat)
+![](https://img.shields.io/github/package-json/v/tman540/probability-simulator/master.svg?style=flat) ![](https://img.shields.io/github/repo-size/tman540/probability-simulator.svg?style=flat) ![](https://img.shields.io/github/license/tman540/probability-simulator.svg?style=flat)
 
 ## Installation
 1. Download the source code [here](https://github.com/tman540/probability-simulator)
