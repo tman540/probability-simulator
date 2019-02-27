@@ -68,6 +68,7 @@ class Plugin:
                           suffix='%(index)d/%(max)d - %(percent).1f%% - %(eta)ds')
 
                 # Define the coords for each location
+
                 miss_coords = [(1, 1), (2, 1), (9, 1), (10, 1), (1, 2), (10, 2), (1, 9), (1, 10), (2, 10), (9, 10), (10, 10)]
                 outer_ring_coords = [(3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1),
                               (2, 2), (3, 2), (3, 8), (4, 2), (5, 2), (6, 2), (7, 2), (8, 2), (9, 2),

@@ -6,6 +6,7 @@ import os
 
 version = "1.7"
 
+
 def run_plugin(plugin_name):
     try:
         # add `plugin.` to the string to account for the plugin folder

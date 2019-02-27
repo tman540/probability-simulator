@@ -38,7 +38,7 @@ class Plugin:
                 # Finish the progress bar
                 bar.finish()
                 # Output results
-                table = PrettyTable(["Card", "Amount", "Percentage"])
+                table = PrettyTable(["Color", "Amount", "Percentage"])
                 for marble in chosen_marbles:
                     # Loop over the rows instead of calling `add_row()` multiple times
                     # Allows for easy expandability
